@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success! Message Sent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font and Colors */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        :root {
+            --bg-light: #e1eaf4; 
+            --text-dark: #102338; 
+            --accent-orange: #e98444; 
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+        .header-text {
+            color: var(--text-dark);
+        }
+        .accent-bg {
+            background-color: var(--accent-orange);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="max-w-xl w-full text-center bg-white p-10 md:p-16 rounded-3xl shadow-2xl space-y-8">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-green-500 mx-auto" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.813a.75.75 0 010 1.06l-3.375 3.375a.75.75 0 01-1.06 0L8.682 12.5a.75.75 0 011.06-1.06l1.687 1.687 2.848-2.848a.75.75 0 011.06 0z" clip-rule="evenodd" />
+        </svg>
+        <h1 class="header-text text-4xl font-extrabold">Message Sent!</h1>
+        <p class="text-xl text-gray-700">
+            Thank you for reaching out to Aviio. We've received your problem and will review it immediately.
+            We'll be in touch within 1 business day.
+        </p>
+        <a href="/" class="inline-block accent-bg text-white px-8 py-3 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105">
+            Return Home
+        </a>
+    </div>
+</body>
+</html>
