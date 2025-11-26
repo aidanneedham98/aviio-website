@@ -176,7 +176,7 @@
             </div>
         </section>
 
-        <!-- 5. About Us Section (Updated with final copy) -->
+        <!-- 5. About Us Section (Updated with final copy and dual images) -->
         <section id="about" class="py-12 md:py-20 mt-16">
             <h2 class="text-4xl md:text-5xl font-extrabold header-text text-center mb-16">Our Story: From Ops Managers to Your Ops Partner</h2>
             <div class="flex flex-col md:flex-row items-center bg-white p-8 md:p-12 rounded-3xl card-shadow">
@@ -184,83 +184,54 @@
                 <!-- Text Content -->
                 <div class="md:w-3/5 md:pr-12 space-y-6 order-2 md:order-1">
                     <p class="text-lg text-gray-700">
-                        We are **Aidan and Hamish**. For a combined ten years, we managed corporate operations, focusing on the day-to-day work. But as Operations Managers, we quickly realised that tedious, repetitive tasks were stealing our time.
+                        We are Aidan and Hamish. For a combined ten years, we managed corporate operations, focusing on the day-to-day work. But as Operations Managers, we quickly realised that tedious, repetitive tasks were stealing our time.
                     </p>
                     <p class="text-lg font-semibold text-gray-800">
-                        So, we started building our own workflows and systems—not because it was our only job, but because we were obsessed with making *our* lives easier.
+                        So, we started building our own workflows and systems, not because it was our only job, but because we were obsessed with making our lives easier.
                     </p>
                     <p class="text-lg text-gray-700">
                         We saw firsthand the sheer advantage of having processes that ran flawlessly, without constant human intervention. We realized that brilliant small business owners were wasting hours on the exact same repetitive tasks. The truth is, we genuinely love building these efficient, robust systems, and we are excited to help you implement them to fuel your growth. We bring that decade of high-level, workflow expertise directly to you. We handle the complexity so you can focus on the passion that started your business.
                     </p>
                 </div>
 
-                <!-- Placeholder Image -->
-                <div class="md:w-2/5 mb-8 md:mb-0 order-1 md:order-2 flex justify-center">
-                    <img src="https://placehold.co/500x400/3075a4/e1eaf4?text=Aidan+%26+Hamish+-+Aviio" alt="Placeholder image of Aidan and Hamish" class="w-full max-w-sm h-auto rounded-xl shadow-2xl object-cover">
+                <!-- Two Image Container for Aidan and Hamish -->
+                <div class="md:w-2/5 mb-8 md:mb-0 order-1 md:order-2 flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-4 md:flex-row">
+                    
+                    <!-- Aidan's Photo -->
+                    <img 
+                        src="./aidan.jpeg" 
+                        alt="Aidan, Co-founder of Aviio" 
+                        class="w-full max-w-[150px] h-auto aspect-square rounded-full shadow-2xl object-cover border-4 border-orange-400 transform hover:scale-105 transition duration-300"
+                        onerror="this.src='https://placehold.co/150x150/e98444/102338?text=Aidan'"
+                    >
+                    
+                    <!-- Hamish's Photo -->
+                    <img 
+                        src="./hamish.jpeg" 
+                        alt="Hamish, Co-founder of Aviio" 
+                        class="w-full max-w-[150px] h-auto aspect-square rounded-full shadow-2xl object-cover border-4 border-blue-400 transform hover:scale-105 transition duration-300"
+                        onerror="this.src='https://placehold.co/150x150/3075a4/e1eaf4?text=Hamish'"
+                    >
                 </div>
+
             </div>
         </section>
 
         <!-- 6. Footer (Contact) -->
         <footer id="contact" class="py-16 mt-16 text-center border-t-2 border-gray-300">
             <h3 class="text-4xl font-extrabold header-text mb-8">Ready to Get Your Evenings Back?</h3>
+            
+            <!-- Direct Email Contact -->
+            <p class="text-lg text-gray-600 mb-2">
+                Need a quick chat? Email us directly at 
+                <a href="mailto:hello@aviio.co" class="accent-text font-bold hover:underline">hello@aviio.co</a>
+            </p>
+            
             <p class="text-lg text-gray-600 mb-8">Tell us what repetitive task you hate the most, and we'll show you how to automate it.</p>
 
-            <!-- Contact Form Section -->
-            <div class="max-w-xl mx-auto bg-white p-8 rounded-xl card-shadow text-left">
-                <!-- 
-                    *** CRITICAL FOR NETLIFY FORMS ***
-                    1. action="/success" ADDED for redirect
-                    2. data-netlify-honeypot="bot-field" ADDED for spam protection
-                -->
-                <form 
-                    name="contact-form" 
-                    method="POST" 
-                    data-netlify="true" 
-                    data-netlify-honeypot="bot-field"
-                    action="/success"
-                    class="space-y-4"
-                >
-                    <!-- Mandatory Netlify form setup fields -->
-                    <input type="hidden" name="form-name" value="contact-form" />
-                    
-                    <!-- Honeypot spam protection field (must be hidden from human users) -->
-                    <p class="hidden">
-                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                    </p>
-
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-                        <input type="text" name="name" id="name" required
-                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:border-orange-500 focus:ring-orange-500">
-                    </div>
-
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Work Email</label>
-                        <input type="email" name="email" id="email" required
-                               class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:border-orange-500 focus:ring-orange-500">
-                    </div>
-
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700">Tell us about your automation problem</label>
-                        <textarea name="message" id="message" rows="4" required
-                                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:border-orange-500 focus:ring-orange-500"></textarea>
-                    </div>
-
-                    <button type="submit" 
-                            class="w-full accent-bg text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
-                        Send My Problem
-                    </button>
-                </form>
-            </div>
-
-
             <div class="mt-12 text-gray-600 space-y-3">
-                <p>&copy; 2024 Aviio. All rights reserved.</p>
+                <p>&copy; 2025 Aviio. All rights reserved.</p>
                 <div class="flex justify-center space-x-6 text-2xl secondary-icon">
-                    <!-- Placeholder Social Icons -->
-                    <a href="#" class="hover:accent-text transition" aria-label="Link to Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4.01c-1.02.5-2.09.84-3.19.96.11-.29.21-.61.21-.93 0-.66-.25-1.28-.67-1.74-.95.45-1.98.78-3.05.97C14.07 3.32 12.8 3 11.5 3c-2.47 0-4.47 2.01-4.47 4.47 0 .34.04.66.12.97-3.72-.18-7.01-1.97-9.21-4.66-.38.65-.6 1.4-.6 2.2 0 1.55.8 2.92 2.02 3.73-.74-.02-1.44-.22-2.05-.56v.05c0 2.18 1.55 4 3.6 4.4-.38.1-.79.15-1.2.15-.29 0-.58-.02-.85-.08.57 1.8 2.24 3.1 4.22 3.13-1.55 1.21-3.51 1.93-5.64 1.93-.36 0-.71-.02-1.06-.06C2.28 20.31 4.54 21 7 21c7.2 0 11.1-5.96 11.1-11.1v-.53c.76-.55 1.41-1.25 1.93-2.05z"/></svg></a>
-                    <a href="#" class="hover:accent-text transition" aria-label="Link to Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.96 3.61 9.07 8.32 9.77v-7.23h-2.58v-3.23h2.58V9.3c0-2.57 1.57-3.98 3.88-3.98 1.11 0 2.07.08 2.35.12v2.75h-1.63c-1.27 0-1.52.6-1.52 1.48v1.94h3.04l-.5 3.23h-2.54V22c4.71-.7 8.32-4.81 8.32-9.77C22 6.48 17.52 2 12 2z"/></svg></a>
                 </div>
             </div>
         </footer>
